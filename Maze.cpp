@@ -138,7 +138,7 @@ bool Maze::traverse()
 
       //call a method in the Cell class to give you a new Cell in a new direction relative to       top_cell (initially, DOWN)
       //DO THIS
-      Cell* curr_cell = top_cell->nextcell();
+      Cell* curr_cell = top_cell->nextCell();
 
 
 
@@ -151,8 +151,8 @@ bool Maze::traverse()
 
       //DO THIS
       //get the row and col from curr_cell
-      int row = curr_cell->getrow();
-      int col = curr_cell->getcol();
+      int row = curr_cell->getRow();
+      int col = curr_cell->getCol();
 
       //check that the current maze location corresponds to SPACE, otherwise delete it
       if (maze->getElement(row, col) == 1)
